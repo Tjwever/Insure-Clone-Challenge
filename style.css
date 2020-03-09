@@ -1,0 +1,733 @@
+/* ---------- COLOR PALLET ----------
+
+	### Primary
+
+	- Dark Violet: hsl(256, 26%, 20%)
+	- Grayish Blue: hsl(216, 30%, 68%)
+	
+	### Neutral
+	
+	- Whitish grey: hsl(0, 0%, 98%)
+	- Very Dark Violet: hsl(270, 9%, 17%)
+	- Dark Grayish Violet: hsl(273, 4%, 51%)
+
+
+   ---------- COLOR PALLET ---------- */
+
+/* ---------- GENERAL ---------- */
+
+:root {
+	--dark-violet: hsl(256, 26%, 20%);
+	--grayish-blue: hsl(216, 30%, 68%);
+	--whitish-grey: hsl(0, 0%, 98%);
+	--v-dark-violet: hsl(270, 9%, 17%);
+	--d-greyish-violet: hsl(273, 4%, 51%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+	/* background-color: var(--whitish-grey); */
+}
+
+a {
+	transition: 0.3s ease;
+}
+
+h1,
+h2 {
+	font-family: "DM Serif Display", serif;
+}
+
+main {
+	width: 100%;
+	background-color: white;
+}
+
+.bg-pattern-intro-left-desktop,
+.bg-pattern-intro-right-desktop,
+.family-photo-desktop,
+.top-section hr,
+.bg-pattern-how-we-work-desktop,
+.bg-pattern-footer-desktop {
+	display: none;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	background-color: #fff;
+}
+
+header .header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+header .header-container img {
+	display: block;
+}
+
+header .insure-logo {
+	padding-left: 25px;
+}
+
+.menu-icon {
+	padding-left: 100px;
+}
+
+header ul {
+	overflow: hidden;
+}
+
+header ul li {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header ul li a {
+	color: var(--whitish-grey);
+	display: block;
+	margin: 0 auto;
+	padding-top: 24px;
+	height: 40px;
+	width: 200px;
+}
+
+header .menu-links {
+	position: absolute;
+	top: 80px;
+	height: 0;
+	width: 100%;
+	text-align: center;
+	background-color: var(--v-dark-violet);
+	transition: 0.2s ease;
+	z-index: 10;
+}
+
+header .menu-links .view-plans a {
+	border: 2px solid hsl(0, 0%, 98%);
+	padding: 0 24px;
+	margin-top: 24px;
+	height: 54px;
+	line-height: 54px;
+	width: 70%;
+}
+
+header .menu-icon {
+	cursor: pointer;
+}
+
+header .menu-btn,
+header .nav-icon-close {
+	display: none;
+}
+
+.bg-pattern-mobile-nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+header .menu-btn:checked ~ .menu-links {
+	height: 551px;
+	padding-top: 24px;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon {
+	display: none;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon-close {
+	display: block;
+}
+
+/* ---------- TOP SECTION ---------- */
+
+.top-section {
+	position: relative;
+	padding-top: 90px;
+	margin-bottom: 140px;
+	background-color: var(--dark-violet);
+	color: var(--whitish-grey);
+	height: 410px;
+}
+
+.family-photo-mobile {
+	width: 100%;
+	display: block;
+}
+
+.bg-pattern-intro-left-mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bg-pattern-intro-right-mobile {
+	position: absolute;
+	right: 0;
+	top: 347px;
+}
+
+.top-section .plan-info {
+	text-align: center;
+	margin: 0 auto;
+	width: 86%;
+}
+
+.top-section .plan-info h1 {
+	position: relative;
+	font-size: 46px;
+	font-weight: normal;
+	line-height: 1;
+	z-index: 2;
+}
+
+.top-section .plan-info p {
+	padding: 18px 0;
+	line-height: 1.6;
+}
+
+.top-section .plan-info .view-plans a {
+	display: block;
+	border: 2px solid hsl(0, 0%, 98%);
+	color: var(--whitish-grey);
+	padding: 0 6px;
+	margin: 24px auto;
+	height: 36px;
+	width: 42%;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/* ---------- MID SECTION ---------- */
+
+.mid-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 86%;
+	margin: auto;
+}
+
+.mid-section h1 {
+	font-size: 46px;
+	font-weight: normal;
+}
+
+.mid-section h2 {
+	font-size: 28px;
+	font-weight: normal;
+	padding: 14px;
+}
+
+.mid-section hr {
+	width: 50%;
+	border: 0;
+	height: 1px;
+	margin-bottom: 34px;
+	background-color: var(--d-greyish-violet);
+}
+
+.mid-section .grid-container {
+	text-align: center;
+	margin-top: 65px;
+	margin-bottom: 68px;
+}
+
+.mid-section .grid-container .grid-section {
+	margin-bottom: 58px;
+}
+
+.mid-section .grid-container .grid-section p {
+	line-height: 1.7;
+	color: var(--d-greyish-violet);
+}
+
+.mid-section .grid-container .grid-section img {
+	margin-bottom: 14px;
+}
+
+/* ---------- BOTTOM SECTION ---------- */
+
+.bottom-section {
+	width: 86%;
+	height: 346px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: var(--dark-violet);
+}
+
+.bottom-section .banner {
+	position: relative;
+	height: 100%;
+}
+
+.bottom-section .banner h2 {
+	position: relative;
+	padding-top: 75px;
+	color: var(--whitish-grey);
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 1;
+	z-index: 5;
+}
+
+.bottom-section .banner .view-plans {
+	padding-top: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+.bottom-section .banner .view-plans a {
+	display: block;
+	color: var(--whitish-grey);
+	border: 2px solid hsl(0, 0%, 98%);
+	padding: 10px;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.bottom-section .banner .bg-pattern-how-we-work-mobile {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* ---------- FOOTER SECTION ---------- */
+
+footer {
+	position: relative;
+	margin-top: 145px;
+	background-color: var(--whitish-grey);
+}
+
+footer hr {
+	width: 86%;
+	border: 0;
+	height: 1px;
+	margin: 0 auto 12px auto;
+	background-color: rgba(131, 125, 135, 0.3);
+}
+
+footer .top-footer-section {
+	position: relative;
+	text-align: center;
+	padding-top: 86px;
+	z-index: 5;
+}
+
+footer .top-footer-section .social-media {
+	padding: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+footer .top-footer-section .social-media li a {
+	display: block;
+	padding: 8px;
+	font-size: 26px;
+	color: var(--d-greyish-violet);
+}
+
+footer .top-footer-section .social-media a:hover {
+	color: black;
+}
+
+.bg-pattern-footer-mobile {
+	position: absolute;
+	z-index: 1;
+}
+
+footer .bottom-footer-section {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+footer .bottom-footer-section .footer-info {
+	line-height: 2.3;
+}
+
+footer .bottom-footer-section .footer-info a {
+	color: var(--dark-violet);
+	z-index: 5;
+}
+
+footer .bottom-footer-section .footer-info .footer-info-top {
+	padding: 22px;
+	color: var(--d-greyish-violet);
+}
+
+.attribution {
+	text-align: center;
+	width: 86%;
+	font-size: 14px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 40px 0 10px 0;
+}
+
+/* ---------- DESKTOP SECTION ---------- */
+
+@media (min-width: 950px) {
+	.bg-pattern-intro-left-desktop,
+	.bg-pattern-intro-right-desktop,
+	.family-photo-desktop,
+	.top-section hr,
+	.bg-pattern-how-we-work-desktop,
+	.bg-pattern-footer-desktop,
+	.menu-links {
+		display: block;
+	}
+
+	.bg-pattern-intro-left-mobile,
+	.bg-pattern-intro-right-mobile,
+	.family-photo-mobile,
+	.bg-pattern-how-we-work-mobile,
+	.bg-pattern-footer-mobile,
+	.menu-icon,
+	.bg-pattern-mobile-nav {
+		display: none;
+	}
+
+	/* ---------- HEADER SECTION ---------- */
+
+	header {
+		align-items: center;
+	}
+
+	header .header-container {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 80px;
+		/* padding: 0 10%; */
+	}
+
+	header .insure-logo {
+		padding-left: 10%;
+	}
+
+	header .insure-logo img {
+		display: block;
+		margin: 30px 0;
+		line-height: 80px;
+	}
+
+	header .menu-links {
+		clear: both;
+		position: static;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		background-color: white;
+		height: 80px;
+		width: 700px;
+		margin: 0;
+		padding-right: 10%;
+		color: var(--dark-violet);
+	}
+
+	header .menu-links img {
+		display: none;
+	}
+
+	header ul li {
+		font-size: 0.9em;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	header ul li a {
+		color: var(--d-greyish-violet);
+		display: block;
+		padding: 0 12px;
+		height: 40px;
+		line-height: 40px;
+		width: auto;
+	}
+
+	header ul li a:hover {
+		color: var(--dark-violet);
+	}
+
+	header .menu-links .view-plans a {
+		padding: 0;
+		margin: 0 0 0 18px;
+		color: var(--dark-violet);
+		border: 2px solid var(--dark-violet);
+		width: 160px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	header .menu-links .view-plans a:hover {
+		color: var(--whitish-grey);
+		background-color: black;
+	}
+
+	header .bg-pattern-intro-right-desktop {
+		position: absolute;
+	}
+
+	header .bg-pattern-intro-right-desktop {
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	header .menu-btn:checked ~ .menu-links {
+		height: 80px;
+		padding-top: 0;
+	}
+
+	/* ---------- TOP SECTION ---------- */
+
+	.top-section {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		height: auto;
+		padding: 8% 10%;
+		margin-bottom: 0;
+	}
+
+	.top-section hr {
+		width: 28%;
+		border: 0;
+		height: 1px;
+		margin-bottom: 62px;
+		background-color: var(--whitish-grey);
+	}
+
+	.top-section .plan-info {
+		width: 550px;
+		display: inline-block;
+		text-align: left;
+	}
+
+	.top-section .plan-info h1 {
+		font-size: 73px;
+		line-height: 0.9;
+		padding-bottom: 10px;
+	}
+
+	.top-section .plan-info p {
+		padding-bottom: 32px;
+	}
+
+	.top-section .plan-info li {
+		text-align: center;
+	}
+
+	.top-section .plan-info .view-plans a {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 150px;
+		z-index: 5;
+	}
+
+	.top-section .plan-info .view-plans a:hover {
+		background-color: var(--whitish-grey);
+		color: black;
+	}
+
+	.top-section .family-photo-desktop {
+		/* float: right; */
+		width: 540px;
+		margin: 72px auto 0 auto;
+	}
+
+	.bg-pattern-intro-left-desktop {
+		position: absolute;
+		top: 436px;
+		left: 0;
+	}
+
+	/* ---------- MIDDLE SECTION ---------- */
+
+	.mid-section {
+		display: block;
+		width: auto;
+		margin: 10%;
+		padding-top: 0;
+	}
+
+	.mid-section hr {
+		width: 13%;
+		border: 0;
+		height: 1px;
+		margin-bottom: 62px;
+		background-color: var(--grayish-blue);
+	}
+
+	.mid-section h1 {
+		font-size: 72px;
+	}
+
+	.mid-section .grid-container {
+		display: flex;
+		text-align: left;
+		justify-content: space-between;
+	}
+
+	.mid-section .grid-container .grid-section {
+		width: 31%;
+	}
+
+	.mid-section .grid-container .grid-section h2 {
+		padding: 18px 0;
+	}
+
+	/* ---------- BOTTOM SECTION ---------- */
+
+	.bottom-section {
+		width: auto;
+		height: 250px;
+		margin: 0 10%;
+		text-align: left;
+	}
+
+	.bottom-section .banner {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.bottom-section .banner h2 {
+		padding: 0 0 0 80px;
+		margin: auto 0;
+		font-size: 48px;
+		width: 420px;
+	}
+
+	.bottom-section .banner .view-plans {
+		padding: 0;
+		text-align: center;
+		margin: auto;
+		z-index: 5;
+	}
+
+	.bottom-section .banner .view-plans a {
+		padding: 12px;
+	}
+
+	.bottom-section .banner .view-plans a:hover {
+		background-color: var(--whitish-grey);
+		color: black;
+	}
+
+	.bg-pattern-how-we-work-desktop {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	/* ---------- FOOTER SECTION ---------- */
+
+	footer .bg-pattern-footer-desktop {
+		position: absolute;
+		z-index: 1;
+	}
+
+	footer .top-footer-section {
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+		padding: 55px 10% 18px 10%;
+	}
+
+	footer .top-footer-section .insure-logo {
+		padding: 0;
+		margin: auto 0;
+	}
+
+	footer .top-footer-section .social-media {
+		padding: 0;
+		text-align: left;
+	}
+
+	footer hr {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	footer .bottom-footer-section {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 10%;
+		z-index: 5;
+	}
+
+	footer .bottom-footer-section .footer-info ul {
+		position: relative;
+		z-index: 5;
+		padding-bottom: 60px;
+	}
+
+	footer .bottom-footer-section .footer-info .footer-info-top {
+		padding: 42px 0 22px 0;
+	}
+
+	footer .bottom-footer-section .footer-info ul li a:hover {
+		color: #4e4e4e;
+		border-bottom: 1px solid var(--d-greyish-violet);
+	}
+
+	.attribution {
+		padding: 0;
+	}
+}
+
+@media(min-width: 1378px) {
+
+	.top-section {
+		display: block;
+		height: 380px;
+	}
+	.top-section .family-photo-desktop {
+		float: right;
+		width: 540px;
+		margin: 0;
+	}
+	.mid-section {
+		padding-top: 160px;
+	}
+	.bottom-section .banner h2 {
+		padding: 0 80px;
+		font-size: 56px;
+		width: 500px;
+	}
+	.bottom-section .banner .view-plans {
+		margin: auto auto auto 222px;
+	}
+}
